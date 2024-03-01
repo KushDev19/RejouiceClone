@@ -39,7 +39,7 @@ html, body{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.205);
     position: relative;
     z-index: 10;
     color: #fff;
@@ -60,12 +60,41 @@ html, body{
     transform: translate(-50%, -50%);
 }
 
+#line{
+    background-color: rgb(30, 30, 30);
+    height: 1.3px;
+    margin: 0 40px 0 40px;
+}
+
+.pg2-nav{
+    display: flex;
+    padding: 6vh 3vw 1vh 3vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pg2-nav h3{
+    font-size: 30px;
+    font-weight: 500;
+}
 #cursor h5{
     font-size: 1.2vw;
     font-weight: 500;
 }
 
-nav{
+.elem{
+    align-items: center;
+    padding: 3vw 3vw;
+}
+
+.elem h1{
+    line-height: 1.07;
+    overflow-y: hidden;
+    font-weight: normal;
+    font-size: 71px;
+}
+
+.pg1-nav{
     padding: 3vw 3vw; 
     width: 100%;
     display: flex;
