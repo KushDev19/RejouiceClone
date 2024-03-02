@@ -52,7 +52,7 @@ html, body{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.205);
+    /* background-color: rgba(0, 0, 0, 0.205); */
     position: relative;
     z-index: 10;
     color: #fff;
@@ -78,6 +78,11 @@ html, body{
     background-color: rgb(30, 30, 30);
     height: 1.3px;
     margin: 0 40px 0 40px;
+    overflow-x: hidden;
+}
+
+.hide{
+    overflow: hidden !important;
 }
 
 .pg2-nav{
@@ -85,6 +90,7 @@ html, body{
     padding: 6vh 3vw 1vh 3vw;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .pg2-nav h1{
@@ -101,13 +107,18 @@ html, body{
 .pg2-content{
     align-items: center;
     padding: 3vw 3vw;
+    overflow: hidden;
 }
 
 .pg2-content h1{
     line-height: 1.07;
-    overflow-y: auto;
+    overflow: hidden;
     font-weight: normal;
     font-size: 71px;
+}
+
+.div1 span{
+    overflow: hidden;
 }
 
 .pg1-nav{
@@ -137,6 +148,7 @@ nav h4{
 
 #page1-content h1 span{
     font-family: rh;
+    display: inline-block;
 }
 
 #page2{
@@ -241,3 +253,22 @@ nav h4{
     position: absolute;
     height: 50%;
 }
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+}
+
+#loader h3{
+    font-size: 2vw;
+    font-weight: 2vw;
+    }
